@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning software about AI
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me?
-            e-mail --> mahmudselmansahin@gmail.com
+            e-mail --> mahmudselmansahin@gmail.com /n
             instagram --> mahmudselmansahin
             twitter --> @mahmudselmansah
 
