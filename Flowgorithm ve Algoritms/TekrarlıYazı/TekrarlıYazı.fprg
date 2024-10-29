@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tekrarl&#305;Yaz&#305;"/>
+        <attribute name="authors" value="mehmettevfiksahin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 03:08:03 "/>
+        <attribute name="created" value="bWVobWV0dGV2Zmlrc2FoaW47TUVITUVUVEVWRklLOzIwMjQtMTAtMjk7IjAzOjAxOjU4ICI7MzkxNw=="/>
+        <attribute name="edited" value="bWVobWV0dGV2Zmlrc2FoaW47TUVITUVUVEVWRklLOzIwMjQtMTAtMjk7IjAzOjA4OjAzICI7MTs0MDIy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mesaj" type="String" array="False" size=""/>
+            <declare name="adet, ma" type="Integer" array="False" size=""/>
+            <assign variable="ma" expression="0"/>
+            <output expression="&quot;L&#252;tfen Yazd&#305;rmak &#304;stedi&#287;iniz Mesaj&#305; Giriniz: &quot;" newline="True"/>
+            <input variable="mesaj"/>
+            <output expression="&quot;L&#252;tfen Mesaj&#305;n&#305;z&#305;n Ka&#231; Defa Yazd&#305;r&#305;lmas&#305; Gerekti&#287;ini Giriniz: &quot;" newline="True"/>
+            <input variable="adet"/>
+            <while expression="ma &lt; adet">
+                <output expression="mesaj" newline="True"/>
+                <assign variable="ma" expression="ma + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

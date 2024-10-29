@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="SuyunFazlar&#305;"/>
+        <attribute name="authors" value="mehmettevfiksahin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 02:45:46 "/>
+        <attribute name="created" value="bWVobWV0dGV2Zmlrc2FoaW47TUVITUVUVEVWRklLOzIwMjQtMTAtMjk7IjAyOjMzOjQxICI7MzkxMw=="/>
+        <attribute name="edited" value="bWVobWV0dGV2Zmlrc2FoaW47TUVITUVUVEVWRklLOzIwMjQtMTAtMjk7IjAyOjQ1OjQ2ICI7MTs0MDI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sicaklik" type="Integer" array="False" size=""/>
+            <output expression="&quot;S&#305;cakl&#305;k De&#287;erini Giriniz: &quot;" newline="True"/>
+            <input variable="sicaklik"/>
+            <if expression="sicaklik &gt; 0 &amp;&amp; sicaklik &lt; 100">
+                <then>
+                    <output expression="&quot;Suyumuz s&#305;v&#305; faz&#305;ndad&#305;r&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sicaklik &lt; 0">
+                        <then>
+                            <output expression="&quot;Suyumuz kat&#305; faz&#305;ndad&#305;r&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="sicaklik &gt; 100">
+                                <then>
+                                    <output expression="&quot;Suyumuz gaz faz&#305;ndad&#305;r&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="sicaklik = 100">
+                                        <then>
+                                            <output expression="&quot;Suyumuz s&#305;v&#305;-gaz faz&#305;ndad&#305;r ve hal de&#287;i&#351;imi durumundad&#305;r&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Suyumuz kat&#305;-s&#305;v&#305; faz&#305;ndad&#305;r ve hal de&#287;i&#351;imi durumundad&#305;r&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

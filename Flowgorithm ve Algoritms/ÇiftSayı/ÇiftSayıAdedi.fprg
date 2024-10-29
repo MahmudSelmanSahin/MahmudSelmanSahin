@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#199;iftSay&#305;Adedi"/>
+        <attribute name="authors" value="mehmettevfiksahin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 03:19:02 "/>
+        <attribute name="created" value="bWVobWV0dGV2Zmlrc2FoaW47TUVITUVUVEVWRklLOzIwMjQtMTAtMjk7IjAxOjMyOjUzICI7MzkxNA=="/>
+        <attribute name="edited" value="bWVobWV0dGV2Zmlrc2FoaW47TUVITUVUVEVWRklLOzIwMjQtMTAtMjk7IjAzOjE5OjAyICI7Mjs0MDI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayisayisi" type="Integer" array="False" size=""/>
+            <assign variable="sayisayisi" expression="0"/>
+            <output expression="&quot;Bir Say&#305; Giriniz: &quot;" newline="True"/>
+            <input variable="sayi"/>
+            <while expression="sayi != 0">
+                <if expression="(sayi % 2) == 0">
+                    <then>
+                        <assign variable="sayisayisi" expression="sayisayisi + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="&quot;L&#252;tfen Bir Say&#305; Daha Giriniz: &quot;" newline="True"/>
+                <input variable="sayi"/>
+            </while>
+            <output expression="&quot;Girdi&#287;iniz &#199;ift Say&#305;lar&#305;n Adedi: &quot; &amp; sayisayisi &amp; &quot; tanedir&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

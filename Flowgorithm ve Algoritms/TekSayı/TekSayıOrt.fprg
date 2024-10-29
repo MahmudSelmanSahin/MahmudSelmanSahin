@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tek-Say&#305;-Ort"/>
+        <attribute name="authors" value="mehmettevfiksahin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 01:45:04 "/>
+        <attribute name="created" value="bWVobWV0dGV2Zmlrc2FoaW47TUVITUVUVEVWRklLOzIwMjQtMTAtMjk7IjAxOjE1OjEzICI7MzkxMQ=="/>
+        <attribute name="edited" value="bWVobWV0dGV2Zmlrc2FoaW47TUVITUVUVEVWRklLOzIwMjQtMTAtMjk7IjAxOjQ1OjA0ICI7Mzs0MDI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayisayisi, toplam" type="Integer" array="False" size=""/>
+            <declare name="ortalama" type="Real" array="False" size=""/>
+            <assign variable="sayi" expression="0"/>
+            <assign variable="sayisayisi" expression="0"/>
+            <assign variable="toplam" expression="0"/>
+            <output expression="&quot;Girdi&#287;iniz say&#305;lardan sadece tek olanlar&#305;n ortalamas&#305; al&#305;nacakt&#305;r.&quot;" newline="True"/>
+            <output expression="&quot;L&#252;tfen Bir Say&#305; Giriniz: &quot;" newline="True"/>
+            <input variable="sayi"/>
+            <while expression="sayi != 0">
+                <if expression="(sayi % 2) == 0">
+                    <then>
+                        <output expression="&quot;L&#252;tfen Bir Say&#305; Daha Giriniz: &quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="toplam" expression="toplam + sayi"/>
+                        <assign variable="sayisayisi" expression="sayisayisi + 1"/>
+                        <output expression="&quot;L&#252;tfen Bir Say&#305; Daha Giriniz: &quot;" newline="True"/>
+                    </else>
+                </if>
+                <input variable="sayi"/>
+            </while>
+            <assign variable="ortalama" expression="toplam / sayisayisi"/>
+            <output expression="&quot;Say&#305;lar&#305;n Ortalamas&#305;: &quot; &amp; ortalama" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

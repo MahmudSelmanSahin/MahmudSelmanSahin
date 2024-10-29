@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="VizeFinalOrtalama"/>
+        <attribute name="authors" value="mehmettevfiksahin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 04:28:29 "/>
+        <attribute name="created" value="bWVobWV0dGV2Zmlrc2FoaW47TUVITUVUVEVWRklLOzIwMjQtMTAtMjk7IjAyOjAwOjIyICI7MzkwNg=="/>
+        <attribute name="edited" value="bWVobWV0dGV2Zmlrc2FoaW47TUVITUVUVEVWRklLOzIwMjQtMTAtMjk7IjA0OjI4OjI5ICI7Mjs0MDM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize, final, ortalama" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vize Notunuzu Giriniz: &quot;" newline="True"/>
+            <input variable="vize"/>
+            <output expression="&quot;Final Notunuzu Giriniz: &quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="ortalama" expression="vize*(40/100) + final*(60/100)"/>
+            <if expression="vize*(40/100) + final*(60/100) &gt;= 60">
+                <then>
+                    <output expression="&quot;Ge&#231;tin. Notun: &quot; &amp; ortalama" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Kald&#305;n. Notun: &quot; &amp; ortalama" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

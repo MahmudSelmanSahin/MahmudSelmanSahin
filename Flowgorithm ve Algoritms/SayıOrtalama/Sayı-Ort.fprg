@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Say&#305;-Ort"/>
+        <attribute name="authors" value="mehmettevfiksahin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 03:52:40 "/>
+        <attribute name="created" value="bWVobWV0dGV2Zmlrc2FoaW47TUVITUVUVEVWRklLOzIwMjQtMTAtMjk7IjExOjUyOjExICI7MzkxMQ=="/>
+        <attribute name="edited" value="bWVobWV0dGV2Zmlrc2FoaW47TUVITUVUVEVWRklLOzIwMjQtMTAtMjk7IjAzOjUyOjQwICI7Mzs0MDI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="toplam, sayisayisi, sayi, ortalama" type="Real" array="False" size=""/>
+            <assign variable="sayi" expression="0"/>
+            <assign variable="sayisayisi" expression="0"/>
+            <assign variable="toplam" expression="0"/>
+            <output expression="&quot;0 yazana kadar yazd&#305;&#287;&#305;n&#305;z say&#305;lar&#305;n ortalamas&#305;n&#305; alaca&#287;&#305;z&quot;" newline="True"/>
+            <output expression="&quot;L&#252;tfen Bir Sayi Giriniz: &quot;" newline="True"/>
+            <input variable="sayi"/>
+            <while expression="sayi != 0">
+                <assign variable="sayisayisi" expression="sayisayisi + 1"/>
+                <assign variable="toplam" expression="toplam + sayi"/>
+                <output expression="&quot;Bir Say&#305; Daha Giriniz: &quot;" newline="True"/>
+                <input variable="sayi"/>
+            </while>
+            <assign variable="ortalama" expression="toplam / sayisayisi"/>
+            <output expression="&quot;Say&#305;lar&#305;n Ortalamas&#305;: &quot; &amp; ortalama" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

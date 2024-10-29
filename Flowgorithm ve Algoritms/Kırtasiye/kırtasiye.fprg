@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="k&#305;rtasiye"/>
+        <attribute name="authors" value="mehmettevfiksahin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 02:33:34 "/>
+        <attribute name="created" value="bWVobWV0dGV2Zmlrc2FoaW47TUVITUVUVEVWRklLOzIwMjQtMTAtMjk7IjAyOjE2OjMxICI7MzkxMw=="/>
+        <attribute name="edited" value="bWVobWV0dGV2Zmlrc2FoaW47TUVITUVUVEVWRklLOzIwMjQtMTAtMjk7IjAyOjMzOjM0ICI7MTs0MDIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="defter, silgi, kalem, df, sf, kf, ds, ss, ks, toplam" type="Integer" array="False" size=""/>
+            <assign variable="kalem" expression="40"/>
+            <assign variable="defter" expression="60"/>
+            <assign variable="silgi" expression="5"/>
+            <output expression="&quot;Almak &#304;stedi&#287;iniz Kalem, Defter ve Silgi Adetlerini S&#305;ras&#305;yla Yaz&#305;n&#305;z: &quot;" newline="True"/>
+            <input variable="kf"/>
+            <input variable="df"/>
+            <input variable="sf"/>
+            <assign variable="ds" expression="defter*df"/>
+            <assign variable="ks" expression="kalem*kf"/>
+            <assign variable="ss" expression="silgi*sf"/>
+            <assign variable="toplam" expression="(defter*df) + (kalem*kf) + (silgi*sf)"/>
+            <output expression="&quot;Toplam Borcunuz: &quot; &amp; toplam &amp; &quot; TL'dir.&quot;" newline="True"/>
+            <output expression="&quot;Kalemlerin &#252;creti: &quot; &amp; ks &amp; &quot;TL'dir&quot;" newline="True"/>
+            <output expression="&quot;Defterlerin &#252;creti: &quot; &amp; ds &amp; &quot;TL'dir&quot;" newline="True"/>
+            <output expression="&quot;Silgilerin &#252;creti: &quot; &amp; ss &amp; &quot;TL'dir&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
